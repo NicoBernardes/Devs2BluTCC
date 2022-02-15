@@ -1,6 +1,7 @@
 package Utils;
 
 import DaoEntities.DaoCliente;
+import Entities.Cliente;
 import Entities.PessoaFisica;
 import Entities.PessoaJuridica;
 
@@ -39,4 +40,13 @@ public class Call {
 			System.out.println("Pessoa física Salva com sucesso!");
 		}
 	}
+	
+	public static void updateCliente() {
+		Cliente cliente = new DaoCliente().retornarUm(1);
+		cliente.setNome_cliente("NomeTesteEdição");
+		// não finalizado
+	}
+	
+	
+	
 }
